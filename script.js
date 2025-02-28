@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             nome_acompanhante2: nomeAcompanhante2 || "Nenhum"
         };
 
-        emailjs.send("seu_service_id", "seu_template_id", templateParams)
+        emailjs.send("service_odji60n", "5ve7qlc", templateParams)
             .then(function (response) {
                 alert("Formulário enviado com sucesso!");
                 document.getElementById("contact-form").reset();
