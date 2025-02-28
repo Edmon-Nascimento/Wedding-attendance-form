@@ -72,7 +72,7 @@ form input[type="text"]{
 
 #add-acompanhante{
     padding: 10px;
-    width: 50%;
+    width: 100%;
     border-radius: 7px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     font-size: 16px;
