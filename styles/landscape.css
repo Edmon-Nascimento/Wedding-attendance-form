@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+main{
+    flex-flow: row;
+}
+
+.img, .form{
+    height: 600px;
+    width: 500px;
+}
+
+
+.img{
+    border-radius: 10px 0 0 10px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.form{
+    border-radius: 0 10px 10px 0;
+}

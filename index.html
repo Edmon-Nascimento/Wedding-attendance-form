@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirme sua presença</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/landscape.css" media="screen and (min-width: 1024px)">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("EtuA7kwcQrk2nnQ9Z");
+        })();
+    </script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="img"></section>
+
+        <section class="form">
+            <h1>Formulário de presença</h1>
+            <form id="contact-form">
+                <p>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+                </p>
+                <p>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome" required>
+                </p>
+                <p>
+                    <div>Levará acompanhantes?</div>
+                    <input type="radio" name="acompanhantes" id="acomp-sim" value="sim">
+                    <label for="acomp-sim">Sim</label>
+                    <input type="radio" name="acompanhantes" id="acomp-nao" value="nao">
+                    <label for="acomp-nao">Não</label>
+                </p>
+                <div id="acompanhante-info">
+                    <label for="nome-acompanhante1">Nome do Acompanhante</label>
+                    <input type="text" id="nome-acompanhante1" name="nome-acompanhante1" placeholder="Insira o nome do acompanhante">
+                    
+                    <button type="button" id="add-acompanhante" style="margin-top: 10px;">Adicionar outro acompanhante</button>
+                    
+                    <div id="extra-acompanhante">
+                        <label for="nome-acompanhante2">Nome do Acompanhante</label>
+                        <input type="text" id="nome-acompanhante2" name="nome-acompanhante2" placeholder="Insira o nome do acompanhante">
+                    </div>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    background-color: #5E7947;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-flow: column ;
+}
+
+.img{
+    background: url('../assets/images/banner.jpg') no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.form{
+    background-color: #F7F7F5;
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.form h1{
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+form p{
+    padding: 10px 0;
+}
+
+form input{
+    outline: none;
+}
+
+form input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+[name="acompanhantes"]{
+    margin-top: 10px;
+}
+
+#acomp-nao{
+    margin-left: 20px;
+}
+
+#acompanhante-info, #extra-acompanhante{
+    display: none;
+    margin-top: 10px;
+}
+
+#add-acompanhante{
+    padding: 10px;
+    width: 50%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    font-size: 0.8em;
+}
+
+#add-acompanhante:hover{
+    background-color: #D0F1BF;
+    cursor: pointer;
+}
+
+form input[type="submit"]{
+    padding: 10px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #759369b0;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #5E7947;
+}
