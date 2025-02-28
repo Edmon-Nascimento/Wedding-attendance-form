@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: "tinos";
+    src: url("../assets/fonts/Tinos-Regular.ttf");
+}
 
 *{
     margin: 0;
@@ -12,6 +16,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "tinos", serif;
 }
 
 main{
@@ -82,7 +87,7 @@ form input[type="text"]{
 }
 
 #add-acompanhante:hover{
-    background-color: #D0F1BF;
+    background-color: #75936991;;
     cursor: pointer;
 }
 
