@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             nome_acompanhante2: nomeAcompanhante2 || "Nenhum"
         };
 
-        emailjs.send("m248ucs", "5ve7qlc", templateParams)
+        emailjs.send("service_m248ucs", "template_coldubk", templateParams)
             .then(function (response) {
                 alert("Formulário enviado com sucesso!");
                 document.getElementById("contact-form").reset();
