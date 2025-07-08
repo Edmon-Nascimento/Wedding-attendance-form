@@ -1,8 +1,6 @@
 @charset "UTF-8";
-@font-face {
-    font-family: "tinos";
-    src: url("../assets/fonts/Tinos-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 
 *{
     margin: 0;
@@ -16,7 +14,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "tinos", serif;
+    font-family: "Indie Flower", cursive;
 }
 
 main{
@@ -34,11 +32,17 @@ main{
 }
 
 .form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     background-color: #F7F7F5;
     margin: auto;
     width: 300px;
     padding: 20px;
     border-radius: 0 0 10px 10px;
+    color: #2f3e2e;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .form h1{
@@ -52,13 +56,14 @@ form p{
 
 form input{
     outline: none;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 form input[type="text"]{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     margin-top: 10px;
 }
 
@@ -75,33 +80,38 @@ form input[type="text"]{
     margin-top: 10px;
 }
 
-#add-acompanhante{
-    padding: 10px;
+#add-acompanhante {
+    padding: 8px;
     width: 100%;
     border-radius: 7px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: 16px;
-    margin-top: 10px;
+    border: none;
+    background-color: #7a9b5b;
+    color: #fff;
+    font-size: .8em;
     transition: background-color 0.3s;
-    font-size: 0.8em;
+    margin: 10px  auto 0;
+    font-size: 1em;
+    font-family: "Indie Flower", cursive;
 }
 
-#add-acompanhante:hover{
-    background-color: #75936991;;
+#add-acompanhante:hover {
+    background-color: #6b8a4d;
     cursor: pointer;
 }
 
-form input[type="submit"]{
+form input[type="submit"] {
     padding: 10px;
     width: 100%;
     border-radius: 7px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: #759369b0;
+    border: none;
+    background-color: #5e7947;
+    color: #fff;
+    font-size: 1.1em;
     margin-top: 20px;
     transition: background-color 0.3s;
+    font-family: 'Dancing Script', cursive;
 }
 
-form input[type="submit"]:hover{
-    cursor: pointer;
-    background-color: #5E7947;
+form input[type="submit"]:hover {
+    background-color: #4a6239;
 }
